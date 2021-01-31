@@ -1,0 +1,253 @@
+.left {
+display: grid;
+margin: 0;
+padding: 0;
+grid-template-columns: repeat(12,1fr);
+}
+.left .main{
+    grid-column: 1/13;
+    flex-wrap: wrap;
+    background-color: transparent;
+padding: 0;
+}
+.left .main .content{
+    width: 100%;
+    padding: 20px;
+border-radius: 8px;
+    background-color: white;
+margin-bottom: 30px;
+}
+.left .main .content .nav{
+    overflow: hidden;
+align-self: start;
+}
+.left .content .nav span, .left .content .nav a{
+    margin-left:3px;
+    color: #aaa;
+}
+.left .content .nav ul svg{
+    color: #aaa;
+    width: 12px;
+}
+.left .content .nav ul {
+    align-items: center;
+    display: flex;
+    align-items: center;
+justify-content: center;
+}
+.left .content .nav{
+    font-size: 14px;
+
+}
+.left .content .nav ul li{
+    display: flex;
+}
+.left .content {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    padding: 3px;
+
+}
+.left .content .title {
+    margin: 10px 0 5px 0;
+    opacity: .7;
+}
+
+.left .content .title h2{
+    
+    font-size: 1.3em;
+}
+.left .content  .text{
+    font-size: 1em;
+}
+.left .content  .text a{
+    color: #f82468;
+}
+.left .content  .text img{
+    border-radius: 6px;
+}
+.left .content  .text .desc .time{
+opacity: .5;
+font-weight: 600;
+}
+
+.left .content  .text .desc {
+    display: flex;
+    margin-bottom: 25px;
+}
+.left .content  .text .desc .author{
+    font-weight: bold;
+    font-size: .8em;
+    
+}
+.left .content  .text .desc .author {
+    display: flex;
+    align-items: center;
+}
+.left .content  .text .desc .verify{
+width: 13px;
+}
+
+.left .content  .text .categories ,.left .content .text .categories ul{
+     display: flex;
+    align-items: center;
+}
+.left .content  .text .categories ul li{
+    margin-left: 5px;
+}
+.left .content  .text .categories{
+   
+    margin-top: 50px;
+    font-size: .8em;
+
+}
+.left .content  .text .categories .title{
+    font-weight:normal;
+    margin-right: 3px;
+}
+.left .same-categories .title h2{
+    font-weight: 600;
+    font-size:17px;
+}
+.left .same-categories {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-column: 1/13;
+    border-radius: 8px;
+margin-top: 20px;
+padding: 20px;
+}
+.left .same-categories .card{
+    margin-bottom: 10px;
+    display: flex;
+align-items: center;
+}
+.left .same-categories .card .time{
+    font-size: .8em;
+}
+.left .same-categories .card .title h2{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.left .same-categories .card .image{
+    border-radius: 8px;
+}
+
+.right .social-share{
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+.right .social-share ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right .social-share .title{
+    margin-bottom: 20px;
+    font-size:1em;
+    font-weight: normal;
+}
+.right .social-share a {
+    color: white;
+    font-weight: bold;
+    font-size: .8em;
+    padding: 10px;
+}
+.right .social-share li.instagram {
+    background-color: #f82468;
+    
+}
+.right .social-share li.twitter {
+    border-radius:0 50px 50px 0;
+    background-color: rgb(85, 130, 202);
+
+
+}
+.right .social-share li.facebook {
+    border-radius: 50px 0 0 50px;
+    background-color: rgb(35, 68, 138);
+
+}
+.right .social-share li{
+    display: flex;
+    /* margin-left: 10px; */
+}
+@media  screen and (min-width:425px)
+{
+
+
+}
+@media  screen and (min-width:675px)
+{
+.left .same-categories .card .text{
+    margin-top: 10px;
+}
+.left .same-categories .card{
+    flex-direction: column;
+}
+.left .same-categories .cards{
+display: flex;
+}
+.left .same-categories .card .time{
+    font-size: .8em;
+}
+.left .same-categories .card .title{
+    font-size: 1.2em;
+}
+}
+
+@media  screen and (min-width:1024px)
+{
+    
+    .main-content h1,
+    .main-content h2,
+    .main-content h3,
+    .main-content h4,
+    .main-content h5,
+    .main-content h6{
+        margin-top: 20px;
+
+    }
+    .left .same-categories .card .time{
+    font-size: .7em;
+}
+.left .same-categories .cards {
+    padding: 0;
+    margin: 0;
+}
+.left .same-categories .card {
+    margin-left:10px;
+}
+.left .same-categories .card .title{
+    font-size: 1.2em;
+    margin-bottom: 12px;
+}
+    .right{
+        position: relative;
+    }
+    .navbar
+.right {
+    position: fixed;
+top: 0;
+right: 0;
+    width: 32%;
+}
+    .left .main{
+
+    grid-column: 2/13;
+}
+
+}
+
+
+@media  screen and (min-width:1300px)
+{
+
+}
